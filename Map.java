@@ -73,19 +73,6 @@ public class Map {
 			holder.add(scnr.nextLine());
 			counter++;
 		}
-		/*
-		 * from the instructor, use line = scnr.next().trim();
-		 * this.floorplan = new Spot[this.height][this.width];
-		 * for(int i = 0; i < this.height * this.width; i++){
-		 * if(i != 0 && i % this.width == 0){
-		 * r += 1;
-		 * c = 0;
-		 * }
-		 * if(c < this.width-1){
-		 * c += 1;
-		 * } else {
-		 * 
-		 */
 		int length = holder.get(0).length(); // determines the number of columns in the map
 		floorplan = new Spot[counter][length];
 		for (int j = 0; j < counter; j++) {
@@ -172,11 +159,6 @@ public class Map {
 		replacment[this.thingsSize] = a; // add the new thing to the last spot in the new array
 		this.things = replacment;
 		this.thingsSize = things.length;
-		/*
-		 * Thing[] newTHings = Arraus.copyof(this.things, this.things.length + 1);
-		 * newThings[this.things.length] = a;
-		 * this.things = newThings;
-		 */
 	}
 
 	/**
